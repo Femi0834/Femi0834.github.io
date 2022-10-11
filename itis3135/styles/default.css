@@ -1,6 +1,6 @@
 p {
     font-size: 14px;
-    color: rgb(15, 21, 205);
+    color: rgb(29, 235, 94);
     text-align: center;
 }
 
@@ -27,7 +27,7 @@ h1, h2, h3 {
 
 a {
 	text-decoration: none;
-	color: rgb(8, 89, 41);
+	color: rgb(56, 235, 128);
 	font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ figcaption {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #b21414;
+    color: #c93a3a;
     background-color: rgb(8, 89, 41);
     margin-left: 75px;
     margin-right: 75px;
