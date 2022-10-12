@@ -6,6 +6,8 @@ p {
 
 img {
     text-align: center;
+	height: 125px;
+	width: 75px;
 }
 
 header, footer {
