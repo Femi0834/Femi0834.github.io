@@ -25,6 +25,152 @@
       </nav>
     </header> 
     <main>
+      <h2>Activity #3 - HTML forms</h2>
+      <p> This is a premium smoothie shop that also sells record vinyls</p>
+      <figure>
+        <figcaption>Smoothie Menu</figcaption>
+        <table>
+          <thead>
+            <tr>
+              <th id="item" class="center">Item</th>
+              <th id="price" class="center">Price of Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="item" rowspan="5" class="green">Smoothies</td>
+              <td headers="name">Obafemi Oshin</td>
+              <td headers="email">ooshin@uncc.edu</td>
+              <td headers="years" class="center">8</td>
+              <td headers="salary" class="center">$800,000</td>
+            </tr>
+            <tr>
+              <td headers="department" rowspan="2" class="green">Administrative</td>
+              <td headers="name">LeBron James</td>
+              <td headers="email">kingjames@uncc.edu</td>
+              <td headers="years" class="center">8</td>
+              <td headers="salary" class="center">$500,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Randy Crandle</td>
+              <td headers="email">rcrandle@uncc.edu</td>
+              <td headers="years" class="center">5</td>
+              <td headers="salary" class="center">$50,000</td>
+            </tr>
+            <tr>
+              <td headers="department" rowspan="3" class="green">Marketing</td>
+              <td headers="name">Zendaya Coleman</td>
+              <td headers="email">zcoleman@uncc.edu</td>
+              <td headers="years" class="center">7</td>
+              <td headers="salary" class="center">$200,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Obadare Oshin</td>
+              <td headers="email">ooshin1@uncc.edu</td>
+              <td headers="years" class="center">6</td>
+              <td headers="salary" class="center">$116,000</td>
+            </tr>
+            
+            <tr>
+              <td headers="name">Naruto Uzumaki</td>
+              <td headers="email">nuzumaki@uncc.edu</td>
+              <td headers="years" class="center">6</td>
+              <td headers="salary" class="center">$75,000</td>
+            </tr>
+            <tr>
+              <td headers="department" rowspan="3" class="green">Sales</td>
+              <td headers="name">Sasuke Uchiha</td>
+              <td headers="email">suchiha@uncc.edu</td>
+              <td headers="years" class="center">1</td>
+              <td headers="salary" class="center">$70,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Monkey D. Luffy</td>
+              <td headers="email">mluffy@uncc.edu</td>
+              <td headers="years" class="center">7</td>
+              <td headers="salary" class="center">$110,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Donald Glover</td>
+              <td headers="email">ooshin@uncc.edu</td>
+              <td headers="years" class="center">4</td>
+              <td headers="salary" class="center">$250,000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" class="center">Totals</td>
+              <td headers="years" class="center">52</td>
+              <td headers="salary" class="center">$2,171,000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </figure>
+      <form action="#">
+        <label for="first" class="bold">First Name:</label>
+        <input type="text" name="first" id="first" required>
+        <br>
+        <label for="last" class="bold">Last Name:</label>
+        <input type="text" name="last" id="last" required>
+        <br>
+        <label for="email" class="bold">Email:
+          <input type="email" name="email" id="email" required="" placeholder="Enter a valid email address">
+        </label>
+        <br>
+        <label for="telephone" class="bold">
+          "Phone number: "
+          <input type="tel" required="" placeholder="(###) ###-####" id="telephone" size="10">
+        </label>
+        <br>
+        <br>
+        <p>Please select your preferred method of contact:</p>
+        " &nbsp; "
+        <input type="radio" id="radioemail" name="contact" value="Email">
+        " &nbsp; "
+        <label for="radioemail">Email</label>
+        <br>
+        " &nbsp; "
+        <input type="radio" id="radiophone" name="contact" value="Phone">
+        " &nbsp; "
+        <label for="radiophone">Phone</label>
+        <br>
+        " &nbsp; "
+        <fieldset>
+          <legend class="bold">I would like to receive emails regarding:</legend>
+
+          <input type="checkbox" name="email" value="Trends" id="trends" required="">
+          <label for="trends">Trends</label>
+
+          <input type="checkbox" name="email" value="Deals" id="deals" required="">
+          <label for="deals">Deals</label>
+
+          <input type="checkbox" name="email" value="Coupons" id="coupons" required="">
+          <label for="coupons">Coupons</label>
+
+          <input type="checkbox" name="email" value="Promotions" id="promotions" required="">
+          <label for="promotions">Promotions</label>
+
+          <input type="checkbox" name="email" value="None" id="none" required="">
+          <label for="none">None</label>
+        </fieldset>
+        <br>
+        <label class="bold"> 
+          "Gender: "
+          <select name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="prefer not to say">Prefer not to say</option>
+              <option value="other">Other</option>
+          </select>
+        </label>
+        <br>
+        <br>
+        <input type="submit" class="dark">
+      </form>
+      <h2>Location</h2>
+      <p>
+
+      </p>
     </main>
     <footer>
       <nav>
@@ -40,14 +186,12 @@
         ║
         <a href="https://www.linkedin.com/in/obafemi-oshin-476668207/" target="_blank">LinkedIn</a>
       </nav>
-      <p>
-        <a href="https://validator.w3.org/check?uri=referer">
-          <img src="images/button_validation_html5.png" width="11" height="4" alt="Link to HTML validator"
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img src="images/button_validation_css.png" width="11" height="4" alt="Link to CSS validator"
-        </a>
-      </p>
+      <a href="https://validator.w3.org/check?uri=referer">
+        <img src="images/button_validation_html5.png" width="11" height="4" alt="Link to HTML validator"
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="images/button_validation_css.png" width="11" height="4" alt="Link to CSS validator"
+      </a>
     </footer>
   </body>
 </html>
