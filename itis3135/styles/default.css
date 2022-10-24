@@ -4,10 +4,22 @@ p {
     text-align: center;
 }
 
+title {
+	color: #c93a3a;
+	text-align: center;
+	
+}
+
 img {
     text-align: center;
 	height: 350px;
 	width: 225px;
+}
+
+.img2 {
+    text-align: center;
+	height: 31px;
+	width: 88px;
 }
 
 header, footer {
