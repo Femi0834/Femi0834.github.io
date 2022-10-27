@@ -66,6 +66,11 @@ body {
     margin-right: 75px;
 }
 
+li, ul {
+	text-align: center;
+	color: mediumseagreen;
+}
+
 nav {
 	text-align: center;
 }
