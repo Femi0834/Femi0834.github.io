@@ -34,6 +34,12 @@ img {
 	width: 200px;
 }
 
+.img4 {
+    text-align: center;
+	height: 200px;
+	width: 300px;
+}
+
 header, footer {
     margin-top: 50px;
 	margin-bottom: 50px;
