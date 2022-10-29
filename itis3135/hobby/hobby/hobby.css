@@ -28,6 +28,12 @@ img {
 	width: 88px;
 }
 
+.img3 {
+    text-align: center;
+	height: 200px;
+	width: 200px;
+}
+
 header, footer {
     margin-top: 50px;
 	margin-bottom: 50px;
