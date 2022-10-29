@@ -57,6 +57,15 @@ h1, h2, h3 {
 	line-height: 0px;
 }
 
+.h31 {
+	text-align: left;
+}
+
+.h41{
+	text-align: left;
+}
+
+
 a {
 	text-decoration: none;
 	color: rgb(56, 235, 128);
