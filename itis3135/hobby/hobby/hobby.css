@@ -40,6 +40,18 @@ img {
 	width: 300px;
 }
 
+.img5 {
+    text-align: center;
+	height: 258px;
+	width: 232px;
+}
+
+.img6 {
+    text-align: center;
+	height: 300px;
+	width: 300px;
+}
+
 header, footer {
     margin-top: 50px;
 	margin-bottom: 50px;
@@ -55,13 +67,16 @@ h1, h2, h3 {
 	font-family: 'Gill Sans', Calibri, Georgia, serif;
 	text-align: center;
 	line-height: 0px;
+	margin-top: 50px;
 }
 
 .h31 {
+	margin-top: 50px;
 	text-align: left;
 }
 
 .h41{
+	margin-top: 50px;
 	text-align: left;
 }
 
