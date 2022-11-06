@@ -45,7 +45,15 @@ main {
 	margin-right: 150px;
 }
 
-h1, h2, h3 {
+h1 {
+	font-family: 'Gill Sans', Calibri, Georgia, serif;
+	text-align: center;
+	line-height: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h2, h3 {
 	font-family: 'Gill Sans', Calibri, Georgia, serif;
 	text-align: center;
 	line-height: 0px;
