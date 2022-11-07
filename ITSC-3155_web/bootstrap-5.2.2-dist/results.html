@@ -38,8 +38,7 @@
         <a href="/contact.html">Back to Form</a>
         <script>
             const formResults = document.getElementById('display')
-            new URLSearchParams(window.location.search).forEach((value,
-            name) => {
+            new URLSearchParams(window.location.search).forEach((value, name) => {
                 formResults.append(`${name}: ${value}`)
                 formResults.append(document.createElement('br'))
             })
