@@ -12,11 +12,11 @@
     </header>
     <main>
         <div id="display"></div>
-        <a href="/contact.html">Back to Form</a>
+        <a href="contact.html">Back to Form</a>
         <script>
             const formResults = document.getElementById('display')
-            new URLSearchParams(window.location.search).forEach((value, name) => {
-                formResults.append(`${name}: ${value}`)
+            new URLSearchParams(window.location.search).forEach((value, firstName, lastName, email) => {
+                formResults.append(`${firstName}${lastName}: ${value}`)
                 formResults.append(document.createElement('br'))
             })
         </script>
