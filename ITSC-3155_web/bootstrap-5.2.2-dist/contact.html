@@ -46,31 +46,41 @@
           </nav>
     </header>
     <main>
-      <form action="results.html" method="get">
-        <div class="mb-3">
-          <label for="exampleInputFirstName" class="form-label">First Name</label>
-          <input type="firstName" class="form-control" id="firstName">
+      <form class="row g-3 needs-validation" novalidate action="results.html" method="get">
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputFirstName" class="form-label">Last Name</label>
-          <input type="lastName" class="form-control" id="lastName">
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Email Address</label>
+          <input type="text" class="form-control" id="validationCustom03" required aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
         <div class="mb-3"><br> 
-          <label for="exampleMessage" class="form-label">Message</label> 
-          <textarea cols="50" rows="5" value="message">  
+          <label for="exampleMessage" class="form-label">Message</label>
+          <input type="text" class="form-control" id="validationCustom04" required>
+          <textarea cols="40" rows="3" value="message">
           </textarea><br>
           <br>  
         </div>
         <div class="mb-3">
-          <label for="exampleInputPriorty" class="form-label">Priority</label><br>  
-          <input type="radio" name="male"/>Male<br>  
-          <input type="radio" name="female"/>Female<br>  
-          <input type="radio" name="other"/>Other<br>  
+          <label for="exampleInputPriority" class="form-label">Priority</label><br>  
+          <input type="radio" name="Low" id="validationCustom04" required/>Low<br>  
+          <input type="radio" name="Medium" id="validationCustom04" required/>Medium<br>  
+          <input type="radio" name="High" id="validationCustom04" required/>High<br>  
           <br>  
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
