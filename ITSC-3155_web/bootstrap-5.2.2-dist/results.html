@@ -15,7 +15,7 @@
             const formResults = document.getElementById('display')
             new URLSearchParams(window.location.search).forEach((value,
              name) => {
-                formResults.append(`${name}: ${value}`)
+                formResults.append(`${firstName}: ${value}`)
                 formResults.append(`${name}: ${value}`)
                 formResults.append(document.createElement('br'))
             })
