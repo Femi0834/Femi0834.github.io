@@ -1,0 +1,22 @@
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Comic Papyrus', sans-serif;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+h1, h2, h3 {
+	font-family: 'Papyrus', fantasy;
+	text-align: center;
+	line-height: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
