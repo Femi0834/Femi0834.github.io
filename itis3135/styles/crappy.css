@@ -20,3 +20,9 @@ h1, h2, h3 {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+li {
+    font-family: 'Comic Papyrus';
+    text-align: center;
+    font-size: 25px;
+}
