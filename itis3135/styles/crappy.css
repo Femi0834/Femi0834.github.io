@@ -33,6 +33,7 @@ body {
 
 h1 {
 	font-family: 'Papyrus', fantasy;
+    font-size: 50px;
 	text-align: center;
 	line-height: 0px;
 	margin-top: 30px;
@@ -42,21 +43,33 @@ h1 {
 
 h2 {
     font-family: 'Papyrus', fantasy;
+    font-size: 40px;
 	text-align: center;
 	line-height: 0px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-    text-align: right; 
+    text-align: left; 
     color:deeppink 
 }
 
 h3 {
     font-family: 'Papyrus', fantasy;
-	text-align: center;
+    font-size: 30px;
+	text-align: right;
 	line-height: 0px;
 	margin-top: 30px;
 	margin-bottom: 30px;
     color: chocolate;
+}
+
+h4 {
+    font-family: 'Papyrus', fantasy;
+    font-size: 20px;
+	text-align: left;
+	line-height: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+    color: rgb(17, 198, 147);
 }
 
 li {
