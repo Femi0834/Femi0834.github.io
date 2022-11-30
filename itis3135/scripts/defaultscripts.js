@@ -19,7 +19,7 @@ function setFeeling(feeling) {
 }
 
 function getName() {
-    return name;
+    return name
 }
 
 function getFeeling() {
@@ -56,30 +56,30 @@ cmas.setFullYear(cmas.getFullYear()+1);
 }  
 var one_day=1000*60*60*24;
 
-function daysUntilChristmas(){
+function daysUntilNewYears(){
 
 
-document.getElementById("daysUntilChristmas").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
-" days left until Christmas!");
+document.getElementById("daysUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
+" days left until the New Year!");
 }
 
-function hoursUntilChristmas(){
+function hoursUntilNewYears(){
     var one_hour=1000*60*60;
-    document.getElementById("hoursUntilChristmas").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_hour))+
-" hours left until Christmas!")
+    document.getElementById("hoursUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_hour))+
+" hours left until the New Year!")
 
 }
 
-function weeksUntilChristmas(){
+function weeksUntilNewYears(){
     
-    document.getElementById("weeksUntilChristmas").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)/7)+
-" weeks left until Christmas!")
+    document.getElementById("weeksUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)/7)+
+" weeks left until the New Year!")
 
 }
 
-function monthsUntilChristmas(){
+function monthsUntilNewYear(){
     
-    document.getElementById("monthsUntilChristmas").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)/7/4)+
-" months left until Christmas!")
+    document.getElementById("monthsUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)/7/4)+
+" months left until the New Year!")
 
 }
