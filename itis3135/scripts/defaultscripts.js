@@ -10,7 +10,7 @@ function questions() {
         "You have mentioned that you're feeling " + getFeeling() + '.'; 
 }
 
-function setName(name){ 
+function setName(name) { 
     this.name = name;
 }
 
@@ -19,7 +19,7 @@ function setFeeling(feeling) {
 }
 
 function getName() {
-    return name
+    return name;
 }
 
 function getFeeling() {
@@ -42,44 +42,40 @@ function getCurrentTime() {
 
 
 
-function changeFeeling(){
+function changeFeeling() {
     setFeeling(prompt('We hope you are feeling better! Please enter a new feeling here', "great"));
-    document.getElementById('welcome').innerHTML = 'Jolly Reindeer Designs welcomes you, ' + getName() + '!\n' + 
-    "We are happy that you're feeling " + getFeeling() + '.'; 
+    document.getElementById('welcome').innerHTML = 'Oshin Operations welcomes you, ' + getName() + '!\n' + 
+    "You are feeling " + getFeeling() + '.'; 
 
 }
+
+function changeName() {
+    setName(prompt('You dont like your name! Please enter a new name', "Patrick"));
+    document.getElementById('welcome').innerHTML = 'Oshin Operations welcomes you, ' + getName() + '!\n' + 
+    "You are feeling " + getFeeling() + '.'; 
+
+}
+
 today=new Date();
-var cmas=new Date(today.getFullYear(), 11, 25);
-if (today.getMonth()==11 && today.getDate()>25) 
+var nYear=new Date(today.getFullYear(), 11, 32);
+if (today.getMonth()==11 && today.getDate()>32) 
 {
-cmas.setFullYear(cmas.getFullYear()+1); 
+    nYear.setFullYear(nYear.getFullYear()+1); 
 }  
 var one_day=1000*60*60*24;
 
-function daysUntilNewYears(){
-
-
-document.getElementById("daysUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
-" days left until the New Year!");
+function daysUntilNewYears() {
+    document.getElementById("daysUntilNewYears").innerHTML = (Math.ceil((nYear.getTime()-today.getTime())/(one_day))+
+    " days left until the New Year!");
 }
 
-function hoursUntilNewYears(){
+function hoursUntilNewYears() {
     var one_hour=1000*60*60;
-    document.getElementById("hoursUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_hour))+
+    document.getElementById("hoursUntilNewYears").innerHTML = (Math.ceil((nYear.getTime()-today.getTime())/(one_hour))+
 " hours left until the New Year!")
-
 }
 
-function weeksUntilNewYears(){
-    
-    document.getElementById("weeksUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)/7)+
-" weeks left until the New Year!")
-
-}
-
-function monthsUntilNewYear(){
-    
-    document.getElementById("monthsUntilNewYears").innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)/7/4)+
-" months left until the New Year!")
-
+function weeksUntilNewYears() {
+    document.getElementById("weeksUntilNewYears").innerHTML = (Math.ceil((nYear.getTime()-today.getTime())/(one_day)/7)+
+    " weeks left until the New Year!")
 }
