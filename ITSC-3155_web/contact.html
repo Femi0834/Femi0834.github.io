@@ -49,21 +49,21 @@
       <form class="row g-3 needs-validation" novalidate action="results.html" method="get">
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" required>
+          <input type="text" class="form-control" id="validationCustom01" name="First Name" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" required>
+          <input type="text" class="form-control" id="validationCustom02" name="Last Name" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">Email Address</label>
-          <input type="text" class="form-control" id="validationCustom03" required aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="validationCustom03" name="Email Address" required aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           <div class="valid-feedback">
             Looks good!
@@ -71,16 +71,15 @@
         </div>
         <div class="mb-3"><br> 
           <label for="exampleMessage" class="form-label">Message</label>
-          <input type="text" class="form-control" id="validationCustom04" required>
-          <textarea cols="40" rows="3" value="message">
+          <input type="text" class="form-control" id="validationCustom04" name="Message" required>
           </textarea><br>
           <br>  
         </div>
         <div class="mb-3">
           <label for="exampleInputPriority" class="form-label">Priority</label><br>  
-          <input type="radio" name="Low" id="validationCustom04" required/>Low<br>  
-          <input type="radio" name="Medium" id="validationCustom04" required/>Medium<br>  
-          <input type="radio" name="High" id="validationCustom04" required/>High<br>  
+          <input type="radio" name="Low" id="validationCustom04" name="Priority" required/>Low<br>  
+          <input type="radio" name="Medium" id="validationCustom04" name="Priority" required/>Medium<br>  
+          <input type="radio" name="High" id="validationCustom04" name="Priority" required/>High<br>  
           <br>  
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
