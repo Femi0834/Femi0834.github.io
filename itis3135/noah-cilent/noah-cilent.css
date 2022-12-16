@@ -1,0 +1,237 @@
+p {
+    font-size: 14px;
+    color: rgb(137, 98, 0);
+    text-align: center;
+}
+
+.p2 {
+    font-size: 14px;
+    color: rgb(137, 98, 0);
+    text-align: left;
+}
+
+title {
+	color: rgb(137, 98, 0);
+	text-align: center;
+	font-size: 75px;
+}
+
+img {
+    text-align: center;
+	height: 350px;
+	width: 225px;
+}
+
+.img2 {
+    text-align: center;
+	height: 31px;
+	width: 88px;
+}
+
+.img3 {
+    text-align: center;
+	height: 300px;
+	width: 150px;
+}
+
+header, footer {
+    margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+main {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+h1 {
+	font-family: 'Ek Mukta', serif;
+	text-align: center;
+	line-height: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h2, h3 {
+	font-family: 'Ek Mukta', serif;
+	text-align: center;
+	line-height: 0px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(56, 235, 128);
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: mediumseagreen;
+} 
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+body {
+    font-family: 'Ek Mukta', sans-serif;
+    color: rgb(0, 108, 115);;
+    background-color: rgb(0, 108, 115);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+nav {
+	font-family: 'Ek Mukta';
+	text-align: center;
+}
+
+thead , tfoot {
+	background-color: rgb(54, 118, 255);
+}
+
+th, td {
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(0, 166, 8);
+}
+
+.center {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.left {
+	text-align: left;
+}
+
+
+table {
+	text-decoration-color: rgb(250, 132, 250);
+}
+
+.container {
+	position: relative;
+}
+
+.mySlides {
+	display: none;
+}
+  
+.cursor {
+	cursor: pointer;
+}
+  
+.prev {
+	cursor: pointer;
+	top: 40%;
+	width: 300px;
+	padding: 16px;
+	left: 0%;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+  
+.next {
+	cursor: pointer;
+	position: relative;
+	top: 40%;
+	width: 300px;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+  
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+	background-color: rgba(0, 160, 88, 0.8);
+}
+   
+
+.numbertext {
+	color: #008dc5;
+	font-size: 12px;
+	padding: 8px 12px;
+   text-align:center;
+}
+  
+.caption-container {
+	text-align: center;
+	background-color: #008dc5;;
+	padding: 2px 16px;
+	color: rgb(0, 77, 100);
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+  
+.column {
+	float: left;
+	width: 16.66%;
+}
+  
+.demo {
+	opacity: 0.6;
+}
+  
+ 
+.active, .demo:hover {
+	opacity: 1;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(236, 149, 230);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #f63ef0;
+    color: white;
+  }

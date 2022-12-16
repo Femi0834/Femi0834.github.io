@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Slideshow</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        .img2 {
+            text-align: center;
+	        height: 275px;
+	        width: 400px;
+        }
+
+        .img3 {
+            text-align: center;
+	        height: 350px;
+	        width: 250px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+    </style>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Slideshow</h2>
+        <div class="container">
+            <div class="mySlides" style="display: block;">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/Fem_n_BiggestBass.JPG" alt="Femi holding a 5 lb. freshwater bass">
+            </div>
+
+            <div class="mySlides" style="display: none;">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/Fem_n_E.PNG" alt="Femi and his brotha, Ethan">
+            </div>
+
+            <div class="mySlides" style="display: none;">
+                <div class="numbertext">3 / 6</div>
+                <img class="img2" src="images/Me_n_Mo.JPG" alt="Femi and his twinnem, Mo">
+            </div>
+
+            <div class="mySlides" style="display: none;">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/Fem_n_Mo_City.PNG" width=200 height=275 alt="Twinnem in the city">
+            </div>
+
+            <div class="mySlides" style="display: none;">
+                <div class="numbertext">5 / 6</div>
+                <img class="img3" src="images/Fem_n_Spear.JPG" alt="Femi and brotha Spear">
+            </div>
+
+            <div class="mySlides" style="display: none;">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/Fem_n_Sasuke.JPG" alt="Femi and Sasuke">
+            </div>
+            
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a><br>
+            <br>
+            <div class="center">
+                <span class="dot active" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+        </div>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

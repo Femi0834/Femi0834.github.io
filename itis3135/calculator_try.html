@@ -8,13 +8,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts/calculator_try.js"></script>
     <link rel="stylesheet" href="styles/default.css">
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
     <title>Calculator Part 1</title>
 </head>
 <body>
     <div data-include="components/header.html"></div>
     <main>
         <h2>Calculator Attempt #1</h2>
+        <form name="frmCalc" id="frmCalc">
+            <p>Enter a number</p>
+            
+            <input type="text" name="txtNumber" value="" size="11"><br>
+            
+            <input type="button" value="1" name="button1" id="button1">
+            <input type="button" value="2" name="button2" id="button2">
+            <input type="button" value="3" name="button3" id="button3">
+            <input type="button" value="+" name="buttonAdd" id="buttonAdd"><br>
+            
+            <input type="button" value="4" name="button4" id="button4">
+            <input type="button" value="5" name="button5" id="button5">
+            <input type="button" value="6" name="button6" id="button6">
+            <input type="button" value="-" name="buttonSubtract" id="buttonSubtract"><br>
+            
+            <input type="button" value="7" name="button7" id="button7">
+            <input type="button" value="8" name="button8" id="button8">
+            <input type="button" value="9" name="button9" id="button9">
+            <input type="button" value="*" name="buttonMultiply" id="buttonMultiply"><br>
+            
+            <input type="button" value="." name="buttonDecimal" id="buttonDecimal">
+            <input type="button" value="0" name="button0" id="button0">
+            <input type="button" value="^2" name="buttonSqured" id="buttonSquared">
+            <input type="button" value="/" name="buttonDivide" id="buttonDivide" ><br>
+    
+            <input type="reset" name="buttonClear" id="buttonClear" value="Clear">
+            <input type="button" name="buttonCalculate" id="buttonCalculate" value="Calculate">
+        </form>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
