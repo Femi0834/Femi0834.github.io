@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="defaultcilent.css">
+    <title>Home</title>
+    <nav>
+        <div class="topnav">
+            <a class="active" href="cilent_index.html">Home</a>
+            <a href="cilent_about.html">Founder</a>
+            <a href="report_homeless_pets.html">Report Homeless Pets</a>
+            <a href="animal_slideshow.html">Look For A Buddy</a>
+            <a href="adoption_form.html">Adoption Form</a>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <main>
+        <h1>Ehabby Buddies</h1>
+        <br>
+        <h3>Please Report Pet</h3>
+        <br>
+        <div class="col-md-6 desktopFeatureBox">
+            <div class="light-base py-4 xs:mb-ff-18 sm:mb-ff-18 md:mb-ff-27 rounded container-fluid" id="cta-widget">
+                <div class="col-md-12 lg:mb-4">
+                    <h3 class="mt-0 font-size-28">Start Your Free Alert</h3>
+                    <p class="font-weight-300 font-size-15 leading-tight">Enter <span class="this-pet-transform">your
+                            pet</span>'s information to instantly start spreading local awareness.</p>
+                </div>
+                <div class="col-md-12 ">
+                    <form id="pet-submit-form"
+                        action="/site/index?utm_source=google&amp;utm_medium=search&amp;utm_content=link&amp;utm_campaign=google_desktop_lost_dog_generic&amp;gclid=CjwKCAiA7vWcBhBUEiwAXieItpQmBDNSFRMO4kye2m7qZODrqcUItS82XCC9Orxj1ikyzgue7yuUsBoC4QQQAvD_BwE"
+                        method="post" role="form" enctype="multipart/form-data">
+                        <input type="hidden" name="_csrf"
+                            value="Vottsz2QOire6N1ptBblf_avrT2Ucc-LlGHHb3KEvWIhxF2HUupsSOywqA3dI9AXm-HXafwwn_34C7MWANPpDw==">
+                        <input type="hidden" name="PetSubmitForm[mixpanelID]" value="">
+                        <input type="hidden" name="PetSubmitForm[submit_device]" value="desktop">
+                        <div class="form-group field-petsubmitform-addr_data">
+                            <input type="hidden" id="petsubmitform-addr_data" class="form-control"
+                                name="PetSubmitForm[addr_data]">
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div class="field-petsubmitform-status required">
+                            <label class="control-label">Pet Status</label>
+                            <input type="hidden" name="PetSubmitForm[status]" value="">
+                            <div id="petsubmitform-status" role="radiogroup" aria-required="true"><label><input
+                                        type="radio" name="PetSubmitForm[status]" value="100" checked=""> <span
+                                        class="pet-form-radio-text">Lost</span></label>
+                                <label><input type="radio" name="PetSubmitForm[status]" value="101"> <span
+                                        class="pet-form-radio-text">Found/Stray</span></label>
+                            </div>
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div class="mt-3 field-petsubmitform-secondary_status" style="display: none;">
+                            <select id="petsubmitform-secondary_status" class="form-control"
+                                name="PetSubmitForm[secondary_status]">
+                                <option value="">Select circumstance...</option>
+                                <option value="120">In my possession</option>
+                                <option value="121">Sighting (still roaming)</option>
+                                <option value="122">Deceased</option>
+                            </select>
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 pl-0 xs:pr-0 field-petsubmitform-pet_name required">
+                            <label class="control-label" for="petsubmitform-pet_name">Pet Name</label>
+                            <input type="text" id="petsubmitform-pet_name" class="form-control"
+                                name="PetSubmitForm[pet_name]" maxlength="50" aria-required="true">
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 pl-0 xs:pr-0 field-petsubmitform-address_last_seen required"
+                            enableajaxvalidation="">
+                            <label class="control-label" for="petsubmitform-address_last_seen">Nearest Address Last
+                                Seen</label>
+                            <input type="text" id="petsubmitform-address_last_seen"
+                                class="form-control pac-target-input" name="PetSubmitForm[address_last_seen]"
+                                aria-required="true" placeholder="Enter a location" autocomplete="off">
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div id="map"></div>
+                        <div class="col-sm-6 col-md-6 pl-0 xs:pr-0 field-petsubmitform-email required"
+                            enableajaxvalidation="">
+                            <label class="control-label" for="petsubmitform-email">Contact Email</label>
+                            <input type="text" id="petsubmitform-email" class="form-control" name="PetSubmitForm[email]"
+                                aria-required="true">
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 pl-0 xs:pr-0 field-petsubmitform-password">
+                            <label class="control-label" for="petsubmitform-password">Create Password *</label>
+                            <input type="password" id="petsubmitform-password" class="form-control"
+                                name="PetSubmitForm[password]" autocomplete="new-password">
+                            <div class="label label-danger"></div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 p-0 pb-2 field-petsubmitform-pbrssignup">
+                            <input type="hidden" name="PetSubmitForm[pbrsSignup]" value="0"><label><input
+                                    type="checkbox" id="petsubmitform-pbrssignup" name="PetSubmitForm[pbrsSignup]"
+                                    value="1" checked=""> Sign me up for local lost &amp; found pet alerts</label>
+                            <div class="label label-danger"></div>
+                        </div>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
