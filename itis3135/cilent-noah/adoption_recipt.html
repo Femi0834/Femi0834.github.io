@@ -26,14 +26,18 @@
     <body>
         <main>
             <h1>Ehabby Buddies</h1>
-            <br>
-            <h3>We have a few pets that we would love to find loving homes for!</h3>
-            <br>
-            <img class="centered" src="cilent_images/Ehabby_buddies.JPG" alt="Sparrow, mascot of Ehabby Buddies">
-            <br>
-            <p>Please <a href="animal_slideshow.html">browse</a> through our selection of pets that need love, and if you
-                like what you see please fill out our <a href="adoption_form.html">report form</a>! If you would like to
-                report and missing/found pet, fill <a href="report_homeless_pets.html">adoption form</a>!</p>
+            <h2>This is the Results page</h2>
+            <h1>This is the Results page</h1>
+            <div id="display"></div>
+            <a href="adoption_form.html">Back to Form</a>
+            <script>
+                const formResults = document.getElementById('display')
+                new URLSearchParams(window.location.search).forEach((value,
+                name) => {
+                    formResults.append(`${name}: ${value}`)
+                    formResults.append(document.createElement('br'))
+                })
+            </script>
         </main>
         <footer>Page built by 
             <a href="brand.html">Oshin Operations</a>
